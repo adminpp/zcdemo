@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<script src="public/libs/jquery.min.js"></script>
+<script src="public/libs/vue.min.js"></script>
+<script src="public/libs/bootstrap.min.js"></script>
+<script>
+    $(function(){
+        $.ajax({
+            type:"post",
+            url:"/sys/pet/findAll",
+            success:function (r) {
+                $("#pet").children(":first").attr("src",""${r.rows.petPicture})
+            }
+        })
+    })
+</script>
+<div id="pet"><img src=""></div>
+</body>
+
+</html>
