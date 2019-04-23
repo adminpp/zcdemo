@@ -8,6 +8,7 @@ import javax.annotation.Resource;
 /**
  * @Date: 2019/4/21 19:49
  */
+//查询所有商品
 @RestController("/buyer/product")
 public class BuyerProductController {
     @Resource
