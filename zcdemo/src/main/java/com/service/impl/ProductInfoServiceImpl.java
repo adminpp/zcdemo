@@ -36,7 +36,7 @@ public class ProductInfoServiceImpl implements ProductInfoService {
     }
 
     @Override
-    public ResultData findProductsByPage(Integer page, Integer size) {
+    public ResultData findProductsByPage(Integer page, Integer size,Integer typeId) {
         PageHelper.startPage(page,size);
         List<ProductInfo> list = productInfoMapper.selectByExample(null);
         PageInfo info = new PageInfo(list);

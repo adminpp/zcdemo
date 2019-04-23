@@ -11,7 +11,7 @@ public interface ProductInfoService {
     //根据在架状态查询（先忽略）
     List<ProductInfo> findProductsByStatus();
     //分页查询所有商品
-    ResultData findProductsByPage(Integer page, Integer size);
+    ResultData findProductsByPage(Integer page, Integer size,Integer typeId);
     //添加商品
     void addProductInfo(ProductInfo productInfo);
     //修改商品
